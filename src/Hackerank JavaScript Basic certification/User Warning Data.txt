@@ -1,0 +1,34 @@
+Problem2 - User Warning Data
+Create a JavaScript class User and constructor and getter setter in it based on attribute 'userName'.
+ create Another class ChildCar and inherit the User class. Set the Username values and create a count variable in constructor and set initial value to 0. 
+create method getWarnig() to increase count by 1 and method getWarningCount() to return the warning count.
+
+Solution:-
+
+class User{
+constrcutor(userName){
+this.userName = userName;
+}
+getUserName(){
+return this.userName;
+}
+setUserName(userName){
+this.userName = userName;
+}
+} 
+
+class ChildCar{
+constructor(userName,count){
+super(userName);
+this.userName = userName;
+this.count = 0;
+}
+
+getWarning(){
+count = count + 1;
+}
+
+getWarningCount(){
+return this.count;
+}
+}
